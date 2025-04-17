@@ -82,7 +82,7 @@ const NavBar = (props: { className?: string }) => {
       <div
         className={`nav-menu ${
           isMenuOpen ? "flex" : "hidden"
-        } sm:flex flex-col sm:flex-row items-start sm:items-center lg:gap-6 sm:gap-4 text-md`}
+        } sm:flex flex-col sm:flex-row items-start sm:items-center lg:gap-6 gap-2 text-md`}
       >
         <Link
           href="/about"
