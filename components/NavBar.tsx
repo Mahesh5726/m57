@@ -17,15 +17,17 @@ const NavBar = (props: { className?: string }) => {
   return (
     <div
       className={
-        "nav-container mx-auto p-5" + (props.className ? props.className : "")
+        "nav-container mx-auto border-b border-foreground/10 pb-4" +
+        (props.className ? props.className : "")
       }
     >
       <div className="top-nav-container">
         <Flex align="center" justify="between" py="4">
-          <Link href="/">
-            <Heading size="7" weight="bold">
+          <Link href="/" className="group relative inline-block">
+            <Heading size="7" weight="bold" className="text-foreground">
               Mahesh R
             </Heading>
+            <span className="absolute left-0 bottom-0 h-[2px] w-0 bg-current transition-all duration-300 group-hover:w-full" />
           </Link>
 
           <Button
@@ -33,12 +35,13 @@ const NavBar = (props: { className?: string }) => {
             size="2"
             onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
             aria-label="Toggle theme"
+            radius="full"
           >
             {mounted ? (
               theme === "dark" ? (
-                <SunIcon width="16" height="16" />
+                <SunIcon width="22" height="22" />
               ) : (
-                <MoonIcon width="16" height="16" />
+                <MoonIcon width="22" height="22" />
               )
             ) : (
               <div className="w-4 h-4" /> // Placeholder to prevent layout shift
@@ -48,22 +51,24 @@ const NavBar = (props: { className?: string }) => {
       </div>
 
       <Flex align="start" justify="start" gap="5">
-        <div className="nav-menu flex items-center gap-4 text-sm">
+        <div className="nav-menu flex items-center gap-4 text-md">
           <Link
             href="/about"
-            className="transition-colors hover:text-foreground/80 text-foreground/60"
+            className="relative inline-block text-foreground/60 hover:text-foreground/80 transition-colors after:content-[''] after:absolute after:left-0 after:bottom-0 after:w-0 after:h-[2px] after:bg-current after:transition-all after:duration-300 hover:after:w-full"
           >
             About
           </Link>
+
           <Link
             href="/skills"
-            className="transition-colors hover:text-foreground/80 text-foreground/60"
+            className="relative inline-block text-foreground/60 hover:text-foreground/80 transition-colors after:content-[''] after:absolute after:left-0 after:bottom-0 after:w-0 after:h-[2px] after:bg-current after:transition-all after:duration-300 hover:after:w-full"
           >
             Skills
           </Link>
+
           <Link
             href="/projects"
-            className="transition-colors hover:text-foreground/80 text-foreground/60"
+            className="relative inline-block text-foreground/60 hover:text-foreground/80 transition-colors after:content-[''] after:absolute after:left-0 after:bottom-0 after:w-0 after:h-[2px] after:bg-current after:transition-all after:duration-300 hover:after:w-full"
           >
             Projects
           </Link>
