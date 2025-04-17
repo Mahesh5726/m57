@@ -23,7 +23,7 @@ const NavBar = (props: { className?: string }) => {
   return (
     <div
       className={
-        "nav-container mx-auto border-b border-foreground/10 pb-4" +
+        "nav-container mx-auto border-b border-foreground/10 pb-4 p-2" +
         (props.className ? props.className : "")
       }
     >
@@ -35,7 +35,7 @@ const NavBar = (props: { className?: string }) => {
               weight="bold"
               className="text-foreground"
             >
-              Mahesh R
+              M57
             </Heading>
             <span className="absolute left-0 bottom-0 h-[2px] w-0 bg-current transition-all duration-300 group-hover:w-full" />
           </Link>
