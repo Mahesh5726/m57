@@ -117,8 +117,8 @@ const RootPage = () => {
                 </p>
                 <div className="space-y-2">
                   <p className="text-sm font-medium">Core Technologies:</p>
-                  <ul className="text-sm text-foreground/60 space-y-1">
-                    <li>• Git (85%)</li>
+                  <ul className="text-sm text-foreground/60 space-y-1 mb-16">
+                    <li>• Git </li>
                     <li>• CI/CD Pipelines</li>
                     <li>• Testing Frameworks</li>
                     <li>• Cloud Platforms</li>
@@ -138,7 +138,7 @@ const RootPage = () => {
                 size={{ initial: "2", sm: "3" }}
                 asChild
               >
-                <Link href="/skills">View Detailed Skills →</Link>
+                <Link href="/skills">View Skills →</Link>
               </Button>
             </div>
           </div>
@@ -198,8 +198,8 @@ const RootPage = () => {
                 Let&apos;s Work Together
               </h2>
               <p className="text-sm sm:text-base text-foreground/60 mb-6 sm:mb-8">
-                I&apos;m always interested in hearing about new projects and
-                opportunities.
+                I&apos;m always interested in hearing about new projects,
+                opportunities, and collaborations.
               </p>
               <Button asChild size={{ initial: "2", sm: "3" }} variant="solid">
                 <Link
