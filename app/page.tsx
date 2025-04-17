@@ -14,10 +14,10 @@ const RootPage = () => {
 
         {/* Hero Section */}
         <section className="container mx-auto py-4 sm:py-5">
-          <div className="flex flex-col items-center justify-center gap-4 sm:gap-6">
-            <h1 className="text-center text-3xl sm:text-4xl md:text-5xl font-bold">
+          <div className="flex flex-col gap-4 sm:gap-6">
+            <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold">
               Hi, I&apos;m Mahesh R 👋
-              <span className="text-2xl sm:text-3xl md:text-3xl block mt-3 sm:mt-4 text-foreground/60">
+              <span className="text-xl sm:text-3xl md:text-3xl block mt-3 sm:mt-4 text-foreground/60">
                 Full Stack AI Developer @{" "}
                 <Link
                   href="https://stacklane.co"
@@ -28,8 +28,9 @@ const RootPage = () => {
                 </Link>
               </span>
             </h1>
-            <p className="text-base text-center sm:text-lg text-foreground/60">
-              I craft digital experiences with modern technologies.<br />
+            <p className="text-base sm:text-lg text-foreground/60">
+              I craft digital experiences with modern technologies.
+              <br />
               Passionate about building scalable applications and creating
               intuitive user interfaces.
             </p>
@@ -55,51 +56,53 @@ const RootPage = () => {
               What I Do
             </h2>
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-8">
-              <div className="p-4 sm:p-6 rounded-lg border hover:border-foreground/20 transition-all">
+              <div className="p-4 text-justify sm:p-6 rounded-lg border hover:border-foreground/20 transition-all">
                 <h3 className="text-lg sm:text-xl font-medium mb-3">
-                  Frontend Development
+                  Frontend Engineering
                 </h3>
                 <p className="text-sm sm:text-base text-foreground/60 mb-4">
-                  Building modern and responsive web applications with React and
-                  TypeScript.
+                  Building performant, accessible, and scalable UIs with a
+                  modern stack powered by Next.js, Radix UI, and TypeScript.
                 </p>
                 <div className="space-y-2">
-                  <p className="text-sm font-medium">Core Technologies:</p>
+                  <p className="text-sm font-medium">Core Stack:</p>
                   <ul className="text-sm text-foreground/60 space-y-1">
-                    <li>• React (90%)</li>
-                    <li>• JavaScript (85%)</li>
-                    <li>• TypeScript (80%)</li>
-                    <li>• HTML/CSS (90%)</li>
+                    <li>• Next.js </li>
+                    <li>• TypeScript </li>
+                    <li>• React </li>
+                    <li>• Tailwind CSS </li>
+                    <li>• Radix UI </li>
                   </ul>
-                  <p className="text-sm font-medium mt-4">Expertise:</p>
+                  <p className="text-sm font-medium mt-4">Deliverables:</p>
                   <p className="text-sm text-foreground/60">
-                    Specialized in creating responsive, accessible, and
-                    performant web applications using modern frontend
-                    technologies.
+                    Designing responsive layouts, theme systems, and interactive
+                    components with a focus on user experience and developer
+                    productivity.
                   </p>
                 </div>
               </div>
 
-              <div className="p-4 sm:p-6 rounded-lg border hover:border-foreground/20 transition-all">
+              <div className="p-4 text-justify sm:p-6 rounded-lg border hover:border-foreground/20 transition-all">
                 <h3 className="text-lg sm:text-xl font-medium mb-3">
-                  Backend Development
+                  Backend Infrastructure
                 </h3>
                 <p className="text-sm sm:text-base text-foreground/60 mb-4">
-                  Developing robust server-side applications and APIs with
-                  Node.js and Python.
+                  Engineering lightweight, high-performance APIs and backend
+                  services using Hono.js, Prisma, and Supabase.
                 </p>
                 <div className="space-y-2">
-                  <p className="text-sm font-medium">Core Technologies:</p>
-                  <ul className="text-sm text-foreground/60 space-y-1">
-                    <li>• Node.js (75%)</li>
-                    <li>• Python (70%)</li>
-                    <li>• SQL (75%)</li>
-                    <li>• RESTful APIs</li>
+                  <p className="text-sm font-medium">Core Stack:</p>
+                  <ul className="text-sm text-foreground/60 space-y-1 mb-10">
+                    <li>• Hono.js </li>
+                    <li>• Prisma ORM </li>
+                    <li>• RESTful APIs </li>
+                    <li>• Supabase </li>
                   </ul>
-                  <p className="text-sm font-medium mt-4">Expertise:</p>
+                  <p className="text-sm font-medium mt-4">Deliverables:</p>
                   <p className="text-sm text-foreground/60">
-                    Building scalable backend solutions and efficient database
-                    architectures for modern web applications.
+                    Crafting modular API layers, integrating scalable databases,
+                    and optimizing performance for real-time-ready cloud
+                    environments.
                   </p>
                 </div>
               </div>
@@ -198,8 +201,14 @@ const RootPage = () => {
                 I&apos;m always interested in hearing about new projects and
                 opportunities.
               </p>
-              <Button size={{ initial: "2", sm: "3" }} variant="solid">
-                Get in Touch
+              <Button asChild size={{ initial: "2", sm: "3" }} variant="solid">
+                <Link
+                  rel="noopener noreferrer"
+                  target="_blank"
+                  href="https://tally.so/r/mJB2pJ"
+                >
+                  Get in Touch
+                </Link>
               </Button>
             </div>
           </div>
