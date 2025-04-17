@@ -25,6 +25,13 @@ html {
   --foreground: 213 31% 91%;
   --text: 0 0% 98%;
   --accent: 263 67% 55%;
+
+  /* Responsive breakpoints */
+  --screen-sm: 640px;
+  --screen-md: 768px;
+  --screen-lg: 1024px;
+  --screen-xl: 1280px;
+  --screen-2xl: 1536px;
 }
 
 .light {
@@ -39,4 +46,11 @@ body {
   color: hsl(var(--foreground));
 }
 
-
+/* Container padding adjustments */
+.container {
+  @apply px-4 sm:px-6 lg:px-8;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1280px;
+}
