@@ -7,28 +7,28 @@ import React from "react";
 const Projects = () => {
   const slideData = [
     {
-      title: "Early Disease Detection in Potato Plant 🥔🌱",
-      button: "Explore Project",
-      src: "https://images.unsplash.com/photo-1616582548093-74854ef7b9b2?q=80&w=1500&auto=format&fit=crop",
-      url: "/projects/potato-disease-detection",
-    },
-    {
-      title: "HackerNews Server 🌐",
-      button: "Explore Project",
-      src: "https://images.unsplash.com/photo-1506748686217-c3dbb33c91b2?q=80&w=1500&auto=format&fit=crop",
-      url: "/projects/hackernews-server",
-    },
-    {
-      title: "LPG Leakage Detection 🚨",
-      button: "Explore Project",
-      src: "https://images.unsplash.com/photo-1574169216264-d1fa8f43e5a6?q=80&w=1500&auto=format&fit=crop",
-      url: "/projects/lpg-leakage-detection",
-    },
-    {
       title: "Frost & Found Bakery Web App 🍞",
       button: "Explore Project",
       src: "/Frost-and-Found.png",
       url: "https://frosted-cookie-haven.vercel.app/",
+    },
+    {
+      title: "HackerNews Server 🌐",
+      button: "Explore Project",
+      src: "hacker-news.png",
+      url: "https://hackernews.lemonisland-20d31e0a.centralindia.azurecontainerapps.io/ui",
+    },
+    {
+      title: "Early Disease Detection in Potato Plant 🥔🌱",
+      button: "Explore Project",
+      src: "/mini.png",
+      url: "https://app.box.com/s/smbxswg6e52ca6bw008rxwtvowyt673x",
+    },
+    {
+      title: "LPG Leakage Detection 🚨",
+      button: "Explore Project",
+      src: "/major.jpg",
+      url: "https://app.box.com/s/ngfpfvh1j7iblgrgxwhmvb1otojsxy1i",
     },
   ];
 
