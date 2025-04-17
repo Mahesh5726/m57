@@ -112,7 +112,7 @@ export default function About() {
         </section>
       </div>
 
-      <div className="container mx-auto mt-auto py-4 sm:py-6">
+      <div className="container mx-auto mt-auto">
         <Footer />
       </div>
     </div>
