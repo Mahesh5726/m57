@@ -1,0 +1,70 @@
+@import "tailwindcss";
+@import "@radix-ui/themes/styles.css";
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* Font integration */
+.radix-themes {
+  --default-font-family: var(--font-oxanium);
+  --heading-font-family: var(--font-oxanium);
+  --code-font-family: var(--font-oxanium);
+  --strong-font-family: var(--font-oxanium);
+  --em-font-family: var(--font-oxanium);
+  --quote-font-family: var(--font-oxanium);
+  --cursor-button: pointer;
+  --transition-property: all;
+  --transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-duration: 150ms;
+}
+
+/* Theme variables */
+:root {
+  --background: 224 25% 17%;
+  --foreground: 213 31% 91%;
+  --text: 0 0% 98%;
+  --accent: 263 67% 55%;
+}
+
+.light {
+  --background: 80 31% 94%;
+  --foreground: 222.2 47.4% 11.2%;
+  --text: 240 10% 3.9%;
+  --accent: 263 67% 55%;
+}
+
+body {
+  background-color: hsl(var(--background));
+  color: hsl(var(--foreground));
+  cursor: var(--cursor-pointer-src);
+}
+
+
+
+.shine-container {
+  position: relative;
+  overflow: hidden;
+}
+
+.shine-effect::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 200%;
+  height: 100%;
+  background: linear-gradient(
+    to right,
+    transparent 0%,
+    rgba(255,255,255,0.1) 50%,
+    transparent 100%
+  );
+  animation: shine 1.5s infinite;
+}
+
+@keyframes shine {
+  100% {
+    left: 100%;
+  }
+}
