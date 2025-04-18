@@ -55,6 +55,7 @@ A visually rich frontend for a boutique bakery brand. This project showcases UI 
 
 ### 🌐 HackerNews Server  
 A modern, containerized full-stack clone of HackerNews. Includes custom backend APIs and a deployed UI powered by Azure Container Apps. 
+
 [Link](https://hackernews.lemonisland-20d31e0a.centralindia.azurecontainerapps.io/ui)
 
 ### 🥔 Early Disease Detection in Potato Plant  
