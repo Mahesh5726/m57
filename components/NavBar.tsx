@@ -23,7 +23,7 @@ const NavBar = (props: { className?: string }) => {
   return (
     <div
       className={
-        "nav-container mx-auto border-b border-foreground/10 pb-4 p-2" +
+        "nav-container mx-auto border-b border-foreground/10 pt-0 pb-4 p-2" +
         (props.className ? props.className : "")
       }
     >
