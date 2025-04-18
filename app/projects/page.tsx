@@ -1,8 +1,9 @@
 "use client";
 import Footer from "@/components/Footer";
 import NavBar from "@/components/NavBar";
-import { Carousel } from "@/components/ui/carousel";
 import React from "react";
+import Image from "next/image";
+import { Grid } from "@radix-ui/themes";
 
 const Projects = () => {
   const slideData = [
@@ -15,7 +16,7 @@ const Projects = () => {
     {
       title: "HackerNews Server 🌐",
       button: "Explore Project",
-      src: "hacker-news.png",
+      src: "/hacker-news.png",
       url: "https://hackernews.lemonisland-20d31e0a.centralindia.azurecontainerapps.io/ui",
     },
     {
@@ -38,8 +39,33 @@ const Projects = () => {
         <NavBar />
       </div>
       <div className="relative overflow-hidden w-full h-full py-20 sm:py-12 md:py-16 lg:py-0 lg:pb-22">
-        <div className="max-w-[95vw] md:max-w-[90vw] lg:max-w-[85vw] mx-auto">
-          <Carousel slides={slideData} />
+        <div className="container mx-auto px-4">
+          <Grid columns={{ initial: "1", md: "2" }} gap="4">
+            {slideData.map((slide, index) => (
+              <div
+                key={index}
+                className="flex flex-col items-center border p-4 text-center rounded-lg"
+              >
+                <Image
+                  src={slide.src}
+                  alt={slide.title}
+                  width={300}
+                  height={200}
+                  className="w-full h-48 object-cover rounded-lg"
+                />
+                <h3 className="text-lg font-bold mt-2 text-center">
+                  {slide.title}
+                </h3>
+                <a
+                  href={slide.url}
+                  target="_blank"
+                  className="mt-2 text-blue-500 hover:underline text-center"
+                >
+                  {slide.button}
+                </a>
+              </div>
+            ))}
+          </Grid>
         </div>
       </div>
       <div className="container mx-auto mt-auto px-4">
