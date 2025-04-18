@@ -4,6 +4,7 @@ import { Metadata } from "next";
 import { ThemeProvider } from "next-themes";
 import { PropsWithChildren } from "react";
 import { Oxanium } from "next/font/google";
+import LoadingProvider from "@/components/LoadingProvider";
 
 const oxanium = Oxanium({
   subsets: ["latin"],
@@ -21,7 +22,7 @@ const RootLayout = ({ children }: PropsWithChildren) => {
       <body className={oxanium.className}>
         <ThemeProvider attribute="class" enableSystem>
           <Theme radius="medium" accentColor="violet">
-            {children}
+            <LoadingProvider>{children}</LoadingProvider>
           </Theme>
         </ThemeProvider>
       </body>
