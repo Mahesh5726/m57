@@ -38,7 +38,7 @@ const Projects = () => {
       <div className="container mx-auto px-4 py-4 sm:py-6 md:py-8 lg:py-10">
         <NavBar />
       </div>
-      <div className="relative overflow-hidden w-full h-full py-20 sm:py-12 md:py-16 lg:py-0">
+      <div className="relative overflow-hidden w-full h-full py-20 sm:py-12 md:py-16 lg:py-0 lg:pb-10">
         <div className="container mx-auto px-4">
           <Grid columns={{ initial: "1", md: "2" }} gap="4">
             {slideData.map((slide, index) => (
