@@ -17,11 +17,16 @@ html {
   --transition-property: all;
   --transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   --transition-duration: 150ms;
+
+  --color-background: hsl(var(--background));
+  --color-foreground: hsl(var(--foreground));
+  --color-text: hsl(var(--text));
+  --color-accent: hsl(var(--accent));
 }
 
 /* Theme variables */
 :root {
-  --background: 224 25% 17%;
+  --background: 0 0% 10%;
   --foreground: 213 31% 91%;
   --text: 0 0% 98%;
   --accent: 263 67% 55%;
@@ -35,16 +40,12 @@ html {
 }
 
 .light {
-  --background: 120 20% 95%;
+  --background: 80 31% 94%;
   --foreground: 222.2 47.4% 11.2%;
   --text: 240 10% 3.9%;
   --accent: 263 67% 55%;
 }
 
-body {
-  background-color: hsl(var(--background));
-  color: hsl(var(--foreground));
-}
 
 /* Container padding adjustments */
 .container {
