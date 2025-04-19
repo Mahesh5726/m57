@@ -18,9 +18,9 @@ export const metadata: Metadata = {
 
 const RootLayout = ({ children }: PropsWithChildren) => {
   return (
-    <html lang="en" suppressHydrationWarning>
+    <html lang="en" suppressHydrationWarning className="light">
       <body className={oxanium.className}>
-        <ThemeProvider attribute="class" enableSystem>
+        <ThemeProvider attribute="class" enableSystem defaultTheme="system">
           <Theme radius="medium" accentColor="violet">
             <LoadingProvider>{children}</LoadingProvider>
           </Theme>
