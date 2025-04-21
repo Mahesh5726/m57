@@ -18,14 +18,11 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Mahesh R",
     description: "Full Stack AI Developer Intern @ StackLane",
-    images: [
-      {
-        url: "https://m57.vercel.app/og-image.png",
-        width: 1200,
-        height: 630,
-        alt: "Mahesh R",
-      },
-    ],
+    images: {
+      url: "https://m57.vercel.app/og-image.png",
+      width: 1200,
+      height: 630,
+    },
   },
 };
 
