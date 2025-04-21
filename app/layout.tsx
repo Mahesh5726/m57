@@ -14,6 +14,19 @@ const oxanium = Oxanium({
 
 export const metadata: Metadata = {
   title: "Mahesh R",
+  description: "Full Stack AI Developer Intern @ StackLane",
+  openGraph: {
+    title: "Mahesh R",
+    description: "Full Stack AI Developer Intern @ StackLane",
+    images: [
+      {
+        url: "/og-image.png",
+        width: 1200,
+        height: 630,
+        alt: "Mahesh R",
+      },
+    ],
+  }
 };
 
 const RootLayout = ({ children }: PropsWithChildren) => {
