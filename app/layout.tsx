@@ -16,15 +16,20 @@ export const metadata: Metadata = {
   title: "Mahesh R",
   description: "Full Stack AI Developer Intern @ StackLane",
   openGraph: {
+    type: "website",
+    url: "https://m57.vercel.app/",
     title: "Mahesh R",
     description: "Full Stack AI Developer Intern @ StackLane",
-    images: {
-      url: "https://m57.vercel.app/og-image.png",
-      width: 1200,
-      height: 630,
-    },
+    images: [
+      {
+        url: "https://opengraph.b-cdn.net/production/images/61df15e6-7582-44a0-a380-694d9fd9dcfb.png?token=slwfH-9uBqHRZs0zc6sXGcm-zP9CHqxTz_bDz0TuzN0&height=800&width=1200&expires=33281208445",
+        width: 1200,
+        height: 800,
+      },
+    ],
   },
 };
+
 
 const RootLayout = ({ children }: PropsWithChildren) => {
   return (
