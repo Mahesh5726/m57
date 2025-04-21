@@ -20,13 +20,13 @@ export const metadata: Metadata = {
     description: "Full Stack AI Developer Intern @ StackLane",
     images: [
       {
-        url: "/og-image.png",
+        url: "https://m57.vercel.app/og-image.png",
         width: 1200,
         height: 630,
         alt: "Mahesh R",
       },
     ],
-  }
+  },
 };
 
 const RootLayout = ({ children }: PropsWithChildren) => {
