@@ -47,7 +47,24 @@ html {
 }
 
 
-/* Container padding adjustments */
+/* Container padding adjustments 
+  { instead of " @apply px-4 sm:px-6 lg:px-8; " , u can replace it with., }
+
+  padding-left: 1rem;
+  padding-right: 1rem;
+
+  @media (min-width: 640px) {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+
+  @media (min-width: 1024px) {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+
+*/
+
 .container {
   @apply px-4 sm:px-6 lg:px-8;
   width: 100%;
